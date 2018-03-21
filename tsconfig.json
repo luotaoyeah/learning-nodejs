@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "outDir": "./out/",
+    "sourceMap": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "target": "es2015",
+    "lib": ["dom", "dom.iterable", "es6", "es7"],
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": false
+  },
+  "include": ["./src/**/*"],
+  "exclude": []
+}
