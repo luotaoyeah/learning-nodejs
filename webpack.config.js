@@ -6,10 +6,7 @@ module.exports = [
     entry: path.resolve(__dirname + "/src/index.ts"),
     output: {
       path: path.resolve(__dirname + "/dist/"),
-      filename: "index.js",
-      libraryTarget: "umd",
-      library: "ts-test",
-      umdNamedDefine: true
+      filename: "index.js"
     },
     module: {
       rules: [
@@ -29,6 +26,7 @@ module.exports = [
     resolve: {
       extensions: [".ts", ".js"]
     },
+    target: "node",
     devtool: "source-map",
     plugins: [
       new UglifyJsPlugin({

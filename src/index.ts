@@ -1,1 +1,1 @@
-console.log("hello world"); // tslint:disable-line
+import "./learning-node-2-edition/ch01/hello";
