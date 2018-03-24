@@ -1,3 +1,7 @@
+/*
+ * Example 1-1. Hello World
+ */
+
 import http, { IncomingMessage, ServerResponse } from "http";
 
 http

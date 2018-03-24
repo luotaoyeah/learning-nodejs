@@ -1,5 +1,5 @@
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const path = require("path");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = [
   {
@@ -29,11 +29,12 @@ module.exports = [
     target: "node",
     devtool: "source-map",
     plugins: [
-      new UglifyJsPlugin({
-        uglifyOptions: {
-          ecma: 7
+      new CopyWebpackPlugin([
+        {
+          from: path.resolve(__dirname, "./static"),
+          to: ""
         }
-      })
+      ])
     ]
   }
 ];
