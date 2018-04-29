@@ -4,7 +4,7 @@
   "scripts": {
     "precommit": "lint-staged",
     "build": "rimraf ./dist && webpack",
-    "dev": "rimraf ./dist && webpack && node ./dist/index.js"
+    "dev": "npm run build && node ./dist/index.js"
   },
   "dependencies": {
     "lodash": "^4.17.5"
@@ -22,16 +22,16 @@
     "copy-webpack-plugin": "^4.5.1",
     "friendly-errors-webpack-plugin": "^1.6.1",
     "husky": "^0.14.3",
-    "lint-staged": "^7.0.0",
+    "lint-staged": "^7.0.5",
     "path": "^0.12.7",
-    "prettier": "^1.11.1",
+    "prettier": "^1.12.1",
     "rimraf": "^2.6.2",
     "semver": "^5.4.1",
     "ts-loader": "^3.5.0",
     "tslint": "^5.9.1",
-    "tslint-config-prettier": "^1.10.0",
+    "tslint-config-prettier": "^1.12.0",
     "tslint-loader": "^3.6.0",
-    "typescript": "^2.8.0-rc",
+    "typescript": "^2.8.3",
     "webpack": "^3.10.0"
   }
 }
