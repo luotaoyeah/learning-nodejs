@@ -1,1 +1,1 @@
-import "./books/learning-node-2-edition/ch02/02-buffer-typedarray-string/01-buffer-json-string-decoder/index";
+import "./books/learning-node-2-edition/ch02/02-buffer-typedarray-string/02-buffer-manipulation/example-02-03";
