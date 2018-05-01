@@ -1,7 +1,3 @@
-/*
- *
- */
-
 console.log("\n-------------------------------------------------- 01");
 // 直接使用 new 创建一个新的 Buffer；
 const buffer01 = new Buffer(8);
@@ -24,3 +20,5 @@ console.log(Buffer.alloc(8));
 console.log(Buffer.alloc(8, "a"));
 /* 不会填充 */
 console.log(Buffer.allocUnsafe(8));
+
+export {};
