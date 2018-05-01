@@ -25,3 +25,5 @@ console.log(buffer02.toString("ascii"));
 console.log("\n-------------------------------------------------- 03");
 /* o */
 console.log(buffer02.toString("ascii", 1, 2));
+
+export {};
