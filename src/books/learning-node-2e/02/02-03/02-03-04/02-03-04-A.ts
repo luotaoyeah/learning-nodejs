@@ -1,3 +1,5 @@
+import Timer = NodeJS.Timer;
+
 /*
  * 2.3.4 The Node Event Loop and Timers
  */
@@ -5,7 +7,6 @@
 /*
  * setTimeout()
  */
-import Timer = NodeJS.Timer;
 
 console.log("\n-------------------------------------------------- 01");
 

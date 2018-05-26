@@ -1,3 +1,5 @@
+import Timer = NodeJS.Timer;
+
 /*
  * setInterval()；
  *
@@ -5,7 +7,6 @@
  *     取消一个 interval timer；
  *
  */
-import Timer = NodeJS.Timer;
 
 console.log("\n-------------------------------------------------- 01");
 
