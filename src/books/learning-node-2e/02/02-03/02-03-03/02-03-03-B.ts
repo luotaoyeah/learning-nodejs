@@ -1,8 +1,9 @@
+import { EventEmitter } from "events";
+
 /*
  * EventEmitter.on() 是 EventEmitter.addListener() 的简写；
  *
  */
-import { EventEmitter } from "events";
 
 console.log("\n-------------------------------------------------- 01");
 
