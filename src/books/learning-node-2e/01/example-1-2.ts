@@ -12,7 +12,7 @@ http
   .createServer((request: IncomingMessage, response: ServerResponse) => {
     if (request.url) {
       const query: ParsedUrlQuery = url.parse(request.url, true).query;
-      let name: string | string[] = query.name;
+      let name: string | Array<string> | undefined = query.name;
       if (!name) {
         name = "world";
       }
