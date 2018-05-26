@@ -7,9 +7,9 @@
  * 修改新的 buffer 的内容时，原来的 buffer 也会被修改；
  */
 console.log("\n-------------------------------------------------- 01");
-const buffer01 = new Buffer("this is the way we build our buffer");
+const buffer01: Buffer = new Buffer("this is the way we build our buffer");
 
-const buffer02 = buffer01.slice(19, buffer01.length);
+const buffer02: Buffer = buffer01.slice(19, buffer01.length);
 console.log(buffer02.toString());
 
 buffer02.fill("*", 0, 5);

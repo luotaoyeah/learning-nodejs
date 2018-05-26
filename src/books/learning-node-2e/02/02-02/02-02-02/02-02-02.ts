@@ -33,7 +33,7 @@ console.log(buffer03.equals(buffer04));
 
 /*
  * 可以使用 Buffer.copy() 将一个 buffer 的内容复制到另一个 buffer；
- * 如果目标 buffer 的长度不够，来源 buffer 的内容将被截取；
+ * 如果目标 buffer 的长度不够，内容将被截取；
  */
 console.log("\n-------------------------------------------------- 04");
 const buffer05 = new Buffer("this is a new buffer with a string");
