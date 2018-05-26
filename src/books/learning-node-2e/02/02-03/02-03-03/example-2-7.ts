@@ -15,7 +15,7 @@ class InputChecker extends EventEmitter {
   constructor(name: string, filename: string) {
     super();
     this.name = name;
-    this.writeStream = fs.createWriteStream(`./temp/${filename}.txt`, {
+    this.writeStream = fs.createWriteStream(`./tmp/${filename}.txt`, {
       flags: "a",
       encoding: "utf8",
       mode: 0o666
