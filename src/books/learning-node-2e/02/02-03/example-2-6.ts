@@ -9,12 +9,18 @@ import { EventEmitter } from "events";
 console.log("\n-------------------------------------------------- 01");
 
 const eventEmitter: EventEmitter = new EventEmitter();
+/*
+ * EventEmitter.on() 用于监听事件；
+ */
 eventEmitter.on("timed", (count, time) => {
   console.log(`${time.toLocaleString()} - ${count}`);
 });
 
 let counter = 0;
 setInterval(() => {
+  /*
+   * EventEmitter.emit() 用于触发事件；
+   */
   eventEmitter.emit("timed", ++counter, new Date());
 }, 1000);
 
