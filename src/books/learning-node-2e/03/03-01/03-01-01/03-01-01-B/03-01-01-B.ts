@@ -39,6 +39,7 @@ console.log(http03);
 console.log("\n-------------------------------------------------- 03");
 /* { name: 'tom', age: 18 } */
 console.log(require("./http"));
-console.log(require("./data.json"));
+/* { name: 'tom', age: '18' } */
+console.log(require("./data"));
 
 export {};
