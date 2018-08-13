@@ -2,16 +2,16 @@
   "name": "learning-nodejs",
   "version": "0.1.0",
   "scripts": {
-    "precommit": "lint-staged",
     "build": "rimraf ./dist && webpack",
-    "dev": "npm run build && node ./dist/index.js"
+    "dev": "npm run build && node ./dist/index.js",
+    "precommit": "lint-staged"
   },
   "dependencies": {
-    "lodash": "^4.17.5"
+    "lodash": "^4.17.10"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.105",
-    "@types/node": "^8.10.17",
+    "@types/lodash": "^4.14.116",
+    "@types/node": "^8.10.26",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
     "babel-plugin-transform-runtime": "^6.23.0",
@@ -22,16 +22,16 @@
     "copy-webpack-plugin": "^4.5.1",
     "friendly-errors-webpack-plugin": "^1.6.1",
     "husky": "^0.14.3",
-    "lint-staged": "^7.0.5",
+    "lint-staged": "^7.2.2",
     "path": "^0.12.7",
-    "prettier": "^1.12.1",
+    "prettier": "^1.14.2",
     "rimraf": "^2.6.2",
     "semver": "^5.4.1",
     "ts-loader": "^3.5.0",
     "tslint": "^5.9.1",
-    "tslint-config-prettier": "^1.12.0",
+    "tslint-config-prettier": "^1.14.0",
     "tslint-loader": "^3.6.0",
-    "typescript": "^2.8.3",
-    "webpack": "^3.10.0"
+    "typescript": "^3.0.1",
+    "webpack": "^3.12.0"
   }
 }
