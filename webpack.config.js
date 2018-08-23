@@ -27,7 +27,7 @@ module.exports = [
       extensions: [".ts", ".js", ".json"]
     },
     target: "node",
-    devtool: "source-map",
+    devtool: "eval-source-map",
     plugins: [
       new CopyWebpackPlugin([
         {

@@ -4,6 +4,7 @@
     "sourceMap": true,
     "strict": true,
     "strictPropertyInitialization": false,
+    "noImplicitAny": true,
     "module": "commonjs",
     "moduleResolution": "node",
     "esModuleInterop": true,
