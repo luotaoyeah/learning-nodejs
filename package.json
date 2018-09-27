@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "build": "rimraf ./dist && webpack",
-    "dev": "npm run build && node $NODE_DEBUG_OPTION ./dist/index.js",
+    "dev": "rimraf ./dist && webpack && node $NODE_DEBUG_OPTION ./dist/index.js",
     "precommit": "lint-staged"
   },
   "dependencies": {
