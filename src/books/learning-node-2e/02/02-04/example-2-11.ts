@@ -50,7 +50,7 @@ writeStream.on("open", () => {
                             writeStream.write(
                               `${filename}\n`,
                               "utf8",
-                              (err: NodeJS.ErrnoException) => {
+                              (err: Error | null | undefined) => {
                                 if (err) {
                                   console.log(err.message);
                                 } else {
