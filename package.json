@@ -3,26 +3,27 @@
   "version": "0.1.0",
   "scripts": {
     "build": "rimraf ./dist && webpack",
-    "dev": "rimraf ./dist && webpack && node $NODE_DEBUG_OPTION ./dist/index.js",
+    "dev": "rimraf ./dist && webpack && node ./dist/index.js",
+    "dev:debug": "rimraf ./dist && webpack && node %NODE_DEBUG_OPTION% ./dist/index.js",
     "precommit": "lint-staged"
   },
   "dependencies": {
     "lodash": "^4.17.11"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.116",
-    "@types/node": "^8.10.30",
-    "copy-webpack-plugin": "^4.5.2",
-    "husky": "^1.0.0",
-    "lint-staged": "^7.3.0",
-    "prettier": "^1.14.3",
+    "@types/lodash": "^4.14.118",
+    "@types/node": "^10.12.10",
+    "copy-webpack-plugin": "^4.6.0",
+    "husky": "^1.2.0",
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.15.2",
     "rimraf": "^2.6.2",
-    "ts-loader": "^5.2.1",
+    "ts-loader": "^5.3.0",
     "tslint": "^5.11.0",
-    "tslint-config-prettier": "^1.15.0",
+    "tslint-config-prettier": "^1.16.0",
     "tslint-loader": "^3.6.0",
-    "typescript": "^3.0.3",
-    "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.1"
+    "typescript": "^3.1.6",
+    "webpack": "^4.26.0",
+    "webpack-cli": "^3.1.2"
   }
 }
