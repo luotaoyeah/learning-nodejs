@@ -1,38 +1,45 @@
-import { EventEmitter } from "events";
-
 /*
- * Understanding the Node Environment
- *     Extending JavaScript
- *         Events
- *             on
+ * 1. Understanding the Node Environment
+ *     1.3. Extending JavaScript
+ *         1.3.1. Events
+ *             on，off
  */
+
+import { EventEmitter } from "events";
 
 console.log("\n-------------------------------------------------- 01");
 {
   /*
-   * 跟浏览器中的 JS 一样，
-   * 可以通过 addListener() 方法添加事件处理函数，
-   * 也可以通过 on() 方法添加事件处理函数；
+   * 为了跟浏览器中的事件模型保持一致，
+   * EventEmitter.on() 和 EventEmitter.addListener() 方法是等价的，
+   * EventEmitter.off() 和 EventEmitter.removeListener() 方法是等价的，
    */
 
   class Counter extends EventEmitter {
-    i: number;
+    private count: number = 0;
 
-    constructor(i: number) {
+    constructor(count?: number) {
       super();
-      this.i = i;
+      if (count) {
+        this.count = count;
+      }
     }
 
     increment() {
-      this.i++;
-      this.emit("incremented", this.i);
+      this.count++;
+      this.emit("incremented", this.count);
     }
   }
 
   const counter = new Counter(10);
-  counter.on("incremented", (i: number) => {
-    console.log(i);
-  });
-  counter.increment(); // 11
-  counter.increment(); // 12
+
+  const cb = (count: number) => {
+    console.log("INCREMENTED:", count);
+  };
+
+  counter.on("incremented", cb);
+  counter.increment();
+
+  counter.off("incremented", cb);
+  counter.increment();
 }
