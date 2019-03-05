@@ -32,6 +32,9 @@ const cb = (count: number) => {
   console.log("COUNT:", count);
 };
 
+/*
+ * 必须指定要移除的'事件名称'以及'回调函数'
+ */
 counter.addListener("incremented", cb);
 counter.increment();
 counter.increment();
