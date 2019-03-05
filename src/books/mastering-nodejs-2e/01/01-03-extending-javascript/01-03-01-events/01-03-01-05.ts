@@ -2,9 +2,11 @@
  * Understanding the Node Environment
  *     Extending JavaScript
  *         Events
+ *             createWriteStream()
  */
 
 import { Readable } from "stream";
+import * as fs from "fs";
 
 console.log("\n-------------------------------------------------- 01");
 {
@@ -22,5 +24,13 @@ console.log("\n-------------------------------------------------- 01");
     }, 500);
   };
 
-  r.pipe(process.stdout);
+  /*
+   * 将数据输出到文件流
+   */
+  const writeStream = fs.createWriteStream(
+    "src/books/mastering-nodejs-2e/01/01-03/01-03-01/01-03-01-05.txt",
+    { flags: "w" }
+  );
+
+  r.pipe(writeStream);
 }

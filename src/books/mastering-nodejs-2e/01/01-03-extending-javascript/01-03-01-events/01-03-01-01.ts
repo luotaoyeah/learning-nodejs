@@ -2,6 +2,7 @@
  * 1. Understanding the Node Environment
  *     1.3. Extending JavaScript
  *         1.3.1. Events
+ *             EventEmitter
  */
 
 import { EventEmitter } from "events";
