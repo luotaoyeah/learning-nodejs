@@ -39,12 +39,10 @@ counter.increment();
  * 通过下面的测试代码，可以看到 incremented 事件的回调函数数组中，
  * 有两个回调函数，实际上它们指向的是同一个函数对象，即上面定义的 cb 函数
  */
-// @ts-ignore
-console.assert(counter._events.incremented.length === 2);
-console.assert(
-  // @ts-ignore
-  counter._events.incremented[0] === counter._events.incremented[1]
-);
+const listeners = counter.listeners("incremented");
+console.assert(listeners.length === 2);
+console.assert(listeners[0] === listeners[1]);
+console.assert(listeners[0] === cb);
 
 counter.removeListener("incremented", cb);
 counter.removeListener("incremented", cb);
