@@ -1,4 +1,4 @@
 /dist/**/*
 /node_modules/**/*
-src/books/mastering-nodejs-2e/01/01-04-v8-javascript-and-optimizations/01-04-02-optimizing-your-code/01-04-02-02/01-04-02-02-02.js
-src/books/mastering-nodejs-2e/01/01-04-v8-javascript-and-optimizations/01-04-02-optimizing-your-code/01-04-02-02/01-04-02-02-03.js
+src/books/mastering-nodejs-2e/01/01-04-v8-javascript-and-optimizations/01-04-02-optimizing-your-code/01-04-02-01/01-04-02-01-02.js
+src/books/mastering-nodejs-2e/01/01-04-v8-javascript-and-optimizations/01-04-02-optimizing-your-code/01-04-02-01/01-04-02-01-03.js

@@ -7,7 +7,7 @@
 
 /*
  * 使用如下命令执行文件：
- *     node --allow-natives-syntax --trace-opt --trace-deopt 01-04-02-02-03.js
+ *     node --allow-natives-syntax --trace-opt --trace-deopt 01-04-02-01-03.js
  * 输出如下：
  *     [manually marking 0x034752e9f6f1 <JSFunction square (sfi = 000003E25BA5AAF1)> for non-concurrent optimization]
  *     [compiling method 0x034752e9f6f1 <JSFunction square (sfi = 000003E25BA5AAF1)> using TurboFan]
