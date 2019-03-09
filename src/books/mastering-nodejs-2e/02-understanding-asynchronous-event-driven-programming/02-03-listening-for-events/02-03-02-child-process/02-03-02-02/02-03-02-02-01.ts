@@ -4,7 +4,7 @@
  *         2.3.2. Child Process
  */
 
-const child_process = require("child_process");
+import * as child_process from "child_process";
 
 console.log("\n-------------------------------------------------- 01");
 {
@@ -18,7 +18,7 @@ console.log("\n-------------------------------------------------- 01");
   console.log(`PARENT PROCESS:\t${process.pid}`);
 
   const childProcess = child_process.fork(
-    "src/books/mastering-nodejs-2e/02-understanding-asynchronous-event-driven-programming/02-03-listening-for-events/02-03-02-child-process/02-03-02-02/02-03-02-02-02.ts"
+    "src/books/mastering-nodejs-2e/02-understanding-asynchronous-event-driven-programming/02-03-listening-for-events/02-03-02-child-process/02-03-02-02/02-03-02-02-02.js"
   );
 
   childProcess.on("message", (message: string) => {
