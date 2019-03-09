@@ -1,15 +1,15 @@
 /*
  * 2. Understanding Asynchronous Event-Driven Programming
  *     2.4. Timers
- *         2.4.1. setTimtout()
- *             minimum delay
+ *         2.4.1. setTimeout()
+ *             minimum/maximum delay
  */
 
 console.log("\n-------------------------------------------------- 01");
 {
   /*
-   * 延迟时间的最小值为 1，当延时时间设为小于 1 的数字时（比如：0，-1），或者设为非数字时，
-   * 会自动将延时设置为 1，
+   * 延迟时间的取值范围为 [1, 2147483647（2^31-1） ]，
+   * 当超出这个范围时，会自动被设置为 1
    */
 
   console.log("FOO");

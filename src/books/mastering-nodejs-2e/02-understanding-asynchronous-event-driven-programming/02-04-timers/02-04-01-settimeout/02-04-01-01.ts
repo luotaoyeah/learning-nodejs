@@ -1,7 +1,7 @@
 /*
  * 2. Understanding Asynchronous Event-Driven Programming
  *     2.4. Timers
- *         2.4.1. setTimtout()
+ *         2.4.1. setTimeout()
  */
 
 console.log("\n-------------------------------------------------- 01");
