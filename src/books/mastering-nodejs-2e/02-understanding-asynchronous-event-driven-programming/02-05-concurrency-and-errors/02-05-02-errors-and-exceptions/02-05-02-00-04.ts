@@ -25,7 +25,7 @@ console.log("\n-------------------------------------------------- 02");
    * 我们可以监听 process 的 uncaughtException 事件，处理所有的 uncaught exceptions
    */
 
-  process.on("uncaughtException", (e: NodeJS.ErrnoException) => {
+  process.on("uncaughtException", (e: Error) => {
     console.error("UNCAUGHT EXCEPTION:", e.message);
   });
 
