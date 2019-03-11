@@ -29,8 +29,8 @@ console.log("\n-------------------------------------------------- 01");
   }
 
   const calculator = new Calculator();
-  calculator.addListener("error", (err: NodeJS.ErrnoException) => {
-    console.error(err.message);
+  calculator.addListener("error", (e: NodeJS.ErrnoException) => {
+    console.error(e.message);
   });
 
   calculator.calc(9, 9);
