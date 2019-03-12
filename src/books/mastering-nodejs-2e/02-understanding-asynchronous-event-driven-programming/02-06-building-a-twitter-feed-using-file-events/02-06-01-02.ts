@@ -24,6 +24,4 @@ function fetchMessages() {
   }, 1000 * 60);
 }
 
-fetchMessages();
-
-export {};
+export { fetchMessages };
