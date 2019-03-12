@@ -4,7 +4,6 @@ const twit = new Twit({
   consumer_key: "<key>",
   consumer_secret: "<secret>",
   app_only_auth: true,
-  timeout_ms: 1000 * 60,
   strictSSL: false
 });
 
@@ -14,6 +13,7 @@ twit
     count: 10
   })
   .then((response: Twit.PromiseResponse) => {
+    // 将获取到的消息写入文件
     console.log(response);
   })
   .catch((e: Error) => {
