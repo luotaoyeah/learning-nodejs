@@ -3,7 +3,7 @@ import * as fs from "fs";
 /**
  * 监视消息
  */
-function watchMessages() {
+function watchMessages(cb: (fd: number) => void) {
   fs.open("./dist/02-06-01.txt", "r", (e: Error, fd: number) => {
     if (e) {
       throw e;
@@ -14,7 +14,7 @@ function watchMessages() {
       { persistent: false },
       (event: string, filename: string) => {
         if (event === "change") {
-          console.log("change");
+          cb(fd);
         }
       }
     );
