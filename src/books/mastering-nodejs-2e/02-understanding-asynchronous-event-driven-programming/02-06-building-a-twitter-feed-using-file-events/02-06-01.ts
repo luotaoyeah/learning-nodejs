@@ -2,6 +2,7 @@ import * as http from "http";
 import { IncomingMessage, ServerResponse } from "http";
 import { readMessage } from "./02-06-01-04";
 import * as crypto from "crypto";
+import uuid from "uuid";
 
 let httpResponse: ServerResponse | null = null;
 
@@ -22,7 +23,12 @@ readMessage((e: Error | null, message?: string) => {
   }
 
   if (httpResponse) {
-    httpResponse.write(`data:${message}\n\n`);
+    /*
+     * 注意：此处的消息格式必须满足下面的要求，
+     *      消息前面必须加上：（data:）
+     *      消息最后必须加上：（\n\n）
+     */
+    httpResponse.write(`id:${uuid()}\ndata:${message}\n\n`);
   }
 });
 
@@ -33,7 +39,7 @@ readMessage((e: Error | null, message?: string) => {
 setInterval(() => {
   if (httpResponse) {
     httpResponse.write(
-      `data:${crypto
+      `id:${uuid()}\ndata:${crypto
         .randomBytes(10)
         .toString("hex")
         .toUpperCase()}\n\n`
