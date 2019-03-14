@@ -30,8 +30,10 @@ console.log("\n-------------------------------------------------- 01");
   });
 
   myReadable.on("readable", () => {
-    const data = myReadable.read();
-    console.log(`readable: ${JSON.stringify(data)}`);
+    let data;
+    while ((data = myReadable.read())) {
+      console.log(`readable: ${JSON.stringify(data)}`);
+    }
   });
 
   myReadable.on("end", () => {
