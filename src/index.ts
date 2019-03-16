@@ -1,1 +1,1 @@
-import "./api/events/EventEmitter/event/newListener/01.ts";
+import "./api/events/EventEmitter/event/newListener/02.ts";
