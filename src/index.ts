@@ -1,1 +1,1 @@
-import "./api/timers/scheduling-timers/setImmediate/04.ts";
+import "./api/timers/scheduling-timers/setInterval/01.ts";
