@@ -1,1 +1,1 @@
-import "./api/events/EventEmitter/event/removeListener/01.ts";
+import "./api/timers/scheduling-timers/setImmediate/01.ts";
