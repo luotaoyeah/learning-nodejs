@@ -1,1 +1,1 @@
-import "./api/events/asynchronous-vs-synchronous/02.ts";
+import "./api/events/handling-events-only-once/01.ts";
