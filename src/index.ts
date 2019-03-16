@@ -1,1 +1,1 @@
-import "./api/events/error-events/02.ts";
+import "./api/events/EventEmitter/01.ts";
