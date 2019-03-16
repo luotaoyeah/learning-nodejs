@@ -1,1 +1,1 @@
-import "./api/timers/scheduling-timers/setTimeout/01.ts";
+import "./api/timers/scheduling-timers/setTimeout/02.ts";
