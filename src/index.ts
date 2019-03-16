@@ -1,1 +1,1 @@
-import "./api/timers/cancelling-timers/clearInterval/01.ts";
+import "./api/timers/cancelling-timers/clearTimeout/01.ts";
