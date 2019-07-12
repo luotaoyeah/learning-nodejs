@@ -18,7 +18,7 @@ http
       }
 
       if (name === "avatar") {
-        const filename: string = path.join(process.cwd(), "/dist/avatar.png");
+        const filename: string = path.join(process.cwd(), "/dist/avatar.jpg");
         fs.stat(filename, (err: NodeJS.ErrnoException | null, stats: Stats) => {
           if (err) {
             console.error(JSON.stringify(err, null, 4));
