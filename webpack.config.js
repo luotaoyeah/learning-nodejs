@@ -1,41 +1,35 @@
-const path = require("path");
-const CopyWebpackPlugin = require("copy-webpack-plugin");
+const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = [
   {
-    entry: path.resolve(__dirname + "/src/index.ts"),
+    entry: path.resolve(__dirname + '/src/index.ts'),
     output: {
-      path: path.resolve(__dirname + "/dist/"),
-      filename: "index.js"
+      filename: 'index.js',
+      path: path.resolve(__dirname + '/dist/'),
     },
     module: {
       rules: [
         {
-          test: /\.ts?$/,
-          loader: "tslint-loader",
-          enforce: "pre",
-          include: [path.resolve("src")]
-        },
-        {
           test: /\.ts$/,
-          loader: "ts-loader",
-          exclude: /node_modules/
-        }
-      ]
+          loader: 'ts-loader',
+          exclude: /node_modules/,
+        },
+      ],
     },
     resolve: {
-      extensions: [".ts", ".js", ".json"]
+      extensions: ['.ts', '.js', '.json'],
     },
-    target: "node",
-    mode: "development",
-    devtool: "eval-source-map",
+    target: 'node',
+    mode: 'development',
+    devtool: 'eval-source-map',
     plugins: [
       new CopyWebpackPlugin([
         {
-          from: path.resolve(__dirname, "./static"),
-          to: ""
-        }
-      ])
-    ]
-  }
+          from: path.resolve(__dirname, './static'),
+          to: '',
+        },
+      ]),
+    ],
+  },
 ];

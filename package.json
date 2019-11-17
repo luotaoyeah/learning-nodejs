@@ -1,32 +1,36 @@
 {
-  "name": "learning-nodejs",
+  "name": "@luotao/learning-nodejs",
   "version": "0.1.1",
   "scripts": {
     "build": "rimraf ./dist && webpack",
     "dev": "rimraf ./dist && webpack && node ./dist/index.js",
-    "dev:debug": "rimraf ./dist && webpack && node %NODE_DEBUG_OPTION% ./dist/index.js"
+    "dev:debug": "rimraf ./dist && webpack && node %NODE_DEBUG_OPTION% ./dist/index.js",
+    "eslint:ts": "eslint src/**/*.ts"
   },
   "dependencies": {
-    "lodash": "^4.17.14",
+    "lodash": "^4.17.15",
     "twit": "^2.2.11",
-    "uuid": "^3.3.2"
+    "uuid": "^3.4.0"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.136",
-    "@types/node": "^12.6.2",
-    "@types/twit": "^2.2.22",
-    "@types/uuid": "^3.4.5",
-    "copy-webpack-plugin": "^5.0.3",
-    "husky": "^3.0.0",
-    "lint-staged": "^9.2.0",
-    "prettier": "^1.18.2",
-    "rimraf": "^2.6.3",
-    "ts-loader": "^6.0.4",
-    "tslint": "^5.18.0",
-    "tslint-config-prettier": "^1.18.0",
-    "tslint-loader": "^3.6.0",
-    "typescript": "^3.5.3",
-    "webpack": "^4.35.3",
-    "webpack-cli": "^3.3.5"
+    "@types/lodash": "^4.14.149",
+    "@types/node": "^12.12.34",
+    "@types/twit": "^2.2.23",
+    "@types/uuid": "^3.4.8",
+    "@typescript-eslint/eslint-plugin": "^2.20.0",
+    "@typescript-eslint/parser": "^2.20.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prefer-arrow": "^1.1.7",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.1.2",
+    "prettier": "^2.0.3",
+    "rimraf": "^2.7.1",
+    "ts-loader": "^6.2.2",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
   }
 }
