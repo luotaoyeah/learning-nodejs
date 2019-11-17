@@ -2,9 +2,8 @@
   "name": "@luotao/learning-nodejs",
   "version": "0.1.1",
   "scripts": {
-    "build": "rimraf ./dist && webpack",
-    "dev": "rimraf ./dist && webpack && node ./dist/index.js",
-    "dev:debug": "rimraf ./dist && webpack && node %NODE_DEBUG_OPTION% ./dist/index.js",
+    "dev": "cross-env TS_NODE_PROJECT=\"webpack.tsconfig.json\" webpack && node ./dist/index.js",
+    "dev:debug": "cross-env TS_NODE_PROJECT=\"webpack.tsconfig.json\" webpack && node %NODE_DEBUG_OPTION% ./dist/index.js",
     "eslint:ts": "eslint src/**/*.ts"
   },
   "dependencies": {
@@ -13,13 +12,17 @@
     "uuid": "^3.4.0"
   },
   "devDependencies": {
+    "@types/copy-webpack-plugin": "^5.0.0",
     "@types/lodash": "^4.14.149",
     "@types/node": "^12.12.34",
     "@types/twit": "^2.2.23",
     "@types/uuid": "^3.4.8",
+    "@types/webpack": "^4.41.10",
     "@typescript-eslint/eslint-plugin": "^2.20.0",
     "@typescript-eslint/parser": "^2.20.0",
+    "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.1.1",
+    "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-import": "^2.20.1",
@@ -27,8 +30,9 @@
     "husky": "^4.2.3",
     "lint-staged": "^10.1.2",
     "prettier": "^2.0.3",
-    "rimraf": "^2.7.1",
     "ts-loader": "^6.2.2",
+    "ts-node": "^8.8.1",
+    "tsconfig-paths": "^3.9.0",
     "typescript": "^3.8.3",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"

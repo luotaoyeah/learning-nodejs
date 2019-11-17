@@ -1,23 +1,22 @@
 {
   "compilerOptions": {
-    "sourceMap": true,
-    "strict": true,
-    "strictPropertyInitialization": false,
+    "allowSyntheticDefaultImports": true,
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noUnusedLocals": false,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "target": "esnext",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
     "suppressImplicitAnyIndexErrors": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "allowSyntheticDefaultImports": true,
-    "declaration": false
+    "target": "ESNext"
   },
-  "include": ["./src/**/*"],
-  "exclude": []
+  "exclude": ["webpack.config.ts"]
 }
