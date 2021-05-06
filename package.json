@@ -7,7 +7,7 @@
     "eslint:ts": "eslint src/**/*.ts"
   },
   "dependencies": {
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "twit": "^2.2.11",
     "uuid": "^3.4.0"
   },
