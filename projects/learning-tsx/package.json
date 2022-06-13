@@ -2,7 +2,9 @@
     "name": "@luotao/learning-nodejs.learning-tsx",
     "version": "0.0.1",
     "scripts": {
-        "hello": "tsx ./scripts/hello.ts"
+        "hello": "tsx ./scripts/hello.ts",
+        "cts": "tsx ./scripts/01.cts",
+        "mts": "tsx scripts/01.mts"
     },
     "dependencies": {
         "prettier": "2.8.4",
