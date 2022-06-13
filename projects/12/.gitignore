@@ -2,8 +2,6 @@
 /dist
 /tmp
 .DS_Store
-.idea
-*.iml
 *.out
 npm-debug.log*
 yarn-debug.log*
