@@ -1,5 +1,5 @@
 {
-    "name": "@luotao/learning-nodejs.learning-tsx",
+    "name": "@luotao/learning-nodejs.tsx",
     "version": "0.0.1",
     "scripts": {
         "cts": "tsx ./scripts/01.cts",

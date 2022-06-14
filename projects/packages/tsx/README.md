@@ -1,4 +1,4 @@
-# @luotao/learning-nodejs.learning-tsx
+# @luotao/learning-nodejs.tsx
 
 [https://github.com/esbuild-kit/tsx](https://github.com/esbuild-kit/tsx)
 
