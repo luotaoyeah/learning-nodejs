@@ -1,10 +1,12 @@
 lockfileVersion: 5.4
 
 specifiers:
+  esno: 0.16.3
   prettier: 2.8.4
   tsx: 3.12.3
 
 dependencies:
+  esno: 0.16.3
   prettier: 2.8.4
   tsx: 3.12.3
 
@@ -261,6 +263,13 @@ packages:
       '@esbuild/win32-arm64': 0.17.10
       '@esbuild/win32-ia32': 0.17.10
       '@esbuild/win32-x64': 0.17.10
+    dev: false
+
+  /esno/0.16.3:
+    resolution: {integrity: sha512-6slSBEV1lMKcX13DBifvnDFpNno5WXhw4j/ff7RI0y51BZiDqEe5dNhhjhIQ3iCOQuzsm2MbVzmwqbN78BBhPg==}
+    hasBin: true
+    dependencies:
+      tsx: 3.12.3
     dev: false
 
   /fsevents/2.3.2:

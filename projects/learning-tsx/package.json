@@ -2,11 +2,15 @@
     "name": "@luotao/learning-nodejs.learning-tsx",
     "version": "0.0.1",
     "scripts": {
-        "hello": "tsx ./scripts/hello.ts",
         "cts": "tsx ./scripts/01.cts",
-        "mts": "tsx scripts/01.mts"
+        "esno:cts": "esno ./scripts/01.cts",
+        "esno:hello": "esno ./scripts/hello.ts",
+        "esno:mts": "esno ./scripts/01.mts",
+        "hello": "tsx ./scripts/hello.ts",
+        "mts": "tsx ./scripts/01.mts"
     },
     "dependencies": {
+        "esno": "0.16.3",
         "prettier": "2.8.4",
         "tsx": "3.12.3"
     },
