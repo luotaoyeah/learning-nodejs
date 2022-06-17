@@ -1,11 +1,17 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@types/crypto-js': 4.1.1
   '@types/jest': 29.4.0
+  crypto-js: 4.1.1
   jest: 29.4.3
   prettier: 2.8.4
 
+dependencies:
+  crypto-js: 4.1.1
+
 devDependencies:
+  '@types/crypto-js': 4.1.1
   '@types/jest': 29.4.0
   jest: 29.4.3
   prettier: 2.8.4
@@ -665,6 +671,10 @@ packages:
       '@babel/types': 7.21.2
     dev: true
 
+  /@types/crypto-js/4.1.1:
+    resolution: {integrity: sha512-BG7fQKZ689HIoc5h+6D2Dgq1fABRa0RbBWKBd9SP/MVRVXROflpm5fhwyATX5duFmbStzyzyycPB8qUYKDH3NA==}
+    dev: true
+
   /@types/graceful-fs/4.1.6:
     resolution: {integrity: sha512-Sig0SNORX9fdW+bQuTEovKj3uHcUL6LQKbCrrqb1X7J6/ReAbhCXRAhc+SMejhLELFj2QcyuxmUooZ4bt5ReSw==}
     dependencies:
@@ -981,6 +991,10 @@ packages:
       shebang-command: 2.0.0
       which: 2.0.2
     dev: true
+
+  /crypto-js/4.1.1:
+    resolution: {integrity: sha512-o2JlM7ydqd3Qk9CA0L4NL6mTzU2sdx96a+oOfPu8Mkl/PK51vSyoi8/rQ8NknZtk44vq15lmhAj9CIAGwgeWKw==}
+    dev: false
 
   /debug/4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
