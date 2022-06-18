@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61cdfb72-5685-446a-a79f-89a14c43fda4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/plugin/customParseFormat.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/isDayjs.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,37 +36,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.13.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.13.0&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/proj/git/luotaoyeah/learning-nodejs/projects/packages/dayjs/src/plugin&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs.jest.jest_package&quot;: &quot;D:/proj/git/luotaoyeah/learning-nodejs/projects/packages/dayjs/node_modules/jest&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;pnpm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;D:\\proj\\git\\luotaoyeah\\learning-nodejs\\projects\\packages\\dayjs\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\proj\\git\\luotaoyeah\\learning-nodejs\\projects\\packages\\dayjs\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "javascript.nodejs.core.library.configured.version": "18.13.0",
+    "javascript.nodejs.core.library.typings.version": "18.13.0",
+    "last_opened_file_path": "D:/proj/git/luotaoyeah/learning-nodejs/projects/packages/dayjs/src",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.jest.jest_package": "D:/proj/git/luotaoyeah/learning-nodejs/projects/packages/dayjs/node_modules/jest",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "pnpm",
+    "prettierjs.PrettierConfiguration.Package": "D:\\proj\\git\\luotaoyeah\\learning-nodejs\\projects\\packages\\dayjs\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "D:\\proj\\git\\luotaoyeah\\learning-nodejs\\projects\\packages\\dayjs\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\proj\git\luotaoyeah\learning-nodejs\projects\packages\dayjs\src\plugin" />
       <recent name="D:\proj\git\luotaoyeah\learning-nodejs\projects\packages\dayjs\src" />
+      <recent name="D:\proj\git\luotaoyeah\learning-nodejs\projects\packages\dayjs\src\plugin" />
       <recent name="D:\proj\git\luotaoyeah\learning-nodejs\projects\packages\dayjs\src\format" />
       <recent name="D:\proj\git\luotaoyeah\learning-nodejs\projects\packages\dayjs" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.src/plugin/customParseFormat.test.ts.01">
+  <component name="RunManager" selected="Jest.src/isDayjs.test.ts.01">
     <configuration name="customParseFormat.test.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -77,16 +77,16 @@
       <test-file value="$PROJECT_DIR$/src/plugin/customParseFormat.test.ts" />
       <method v="2" />
     </configuration>
-    <configuration name="src/locale/01.test.ts.01" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="src/isDayjs.test.ts.01" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/locale/01.test.ts" />
+      <test-file value="$PROJECT_DIR$/src/isDayjs.test.ts" />
       <test-names>
-        <test-name value="src/locale/01.test.ts" />
+        <test-name value="src/isDayjs.test.ts" />
         <test-name value="01" />
       </test-names>
       <method v="2" />
@@ -135,18 +135,18 @@
     </configuration>
     <list>
       <item itemvalue="Jest.customParseFormat.test.ts" />
+      <item itemvalue="Jest.src/isDayjs.test.ts.01" />
       <item itemvalue="Jest.src/plugin/customParseFormat.test.ts.01" />
-      <item itemvalue="Jest.src/locale/01.test.ts.01" />
       <item itemvalue="Jest.src/plugin/relativeTime.test.ts.01" />
       <item itemvalue="Jest.src/plugin/relativeTime.test.ts.02" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.src/isDayjs.test.ts.01" />
         <item itemvalue="Jest.src/plugin/customParseFormat.test.ts.01" />
         <item itemvalue="Jest.customParseFormat.test.ts" />
         <item itemvalue="Jest.src/plugin/relativeTime.test.ts.02" />
         <item itemvalue="Jest.src/plugin/relativeTime.test.ts.01" />
-        <item itemvalue="Jest.src/locale/01.test.ts.01" />
       </list>
     </recent_temporary>
   </component>
@@ -161,7 +161,7 @@
       <workItem from="1677586915352" duration="881000" />
       <workItem from="1677589380580" duration="1755000" />
       <workItem from="1677592615808" duration="3908000" />
-      <workItem from="1677650211022" duration="495000" />
+      <workItem from="1677650211022" duration="736000" />
     </task>
     <task id="LOCAL-00001" summary="feat(dayjs): init">
       <created>1655521205168</created>
@@ -198,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655532288266</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat(dayjs): plugin/customParseFormat">
+      <created>1655532624177</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1655532624177</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,6 +262,7 @@
     <MESSAGE value="feat(dayjs): dayjs.Dayjs.format()" />
     <MESSAGE value="feat(dayjs): dayjs.locale()" />
     <MESSAGE value="feat(dayjs): plugin/relativeTime" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(dayjs): plugin/relativeTime" />
+    <MESSAGE value="feat(dayjs): plugin/customParseFormat" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(dayjs): plugin/customParseFormat" />
   </component>
 </project>
