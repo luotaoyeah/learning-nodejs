@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>makeMarkdown</title>
+        <script src="../../node_modules/showdown/dist/showdown.js"></script>
+    </head>
+    <body>
+        <script>
+            const converter = new showdown.Converter();
+            const markdown = converter.makeMarkdown('<h1 id="foo">foo</h1>');
+            console.assert(markdown === '# foo\n\n');
+        </script>
+    </body>
+</html>
